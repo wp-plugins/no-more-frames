@@ -3,8 +3,8 @@ Contributors: christopherross
 Plugin URI: http://thisismyurl.com/wordpress/plugins/no-more-frames
 Tags: frames
 Requires at least: 2.0.0
-Tested up to: 2.5.1
-Stable tag: 0.2.0
+Tested up to: 2.7.1
+Stable tag: 0.5.0
 
 Many web sites try to load your content into their own frame, to help sell ads on their sites. This simple plugin ensure your site is protect from this using a simple piece of code in your document header.
 
