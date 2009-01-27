@@ -4,7 +4,7 @@ Plugin Name: No More Frames
 Plugin URI: http://www.thisismyurl.com/wordpress/plugins/no-more-frames/
 Description: Many web sites try to load your content into their own frame, to help sell ads on their sites. This simple plugin ensure your site is protect from this using a simple piece of code in your document header.
 Author: Christopher Ross
-Version: 0.4.0
+Version: 0.5.1
 Author URI: http://www.thisismyurl.com
 */
 
