@@ -1,6 +1,7 @@
 === Plugin Name ===
 Contributors: christopherross
 Plugin URI: http://thisismyurl.com/wordpress/plugins/no-more-frames
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2754373
 Tags: frames
 Requires at least: 2.0.0
 Tested up to: 2.7.0
