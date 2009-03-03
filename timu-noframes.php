@@ -39,7 +39,7 @@ add_filter('plugin_action_links', 'nomoreframes_donate', -10, 2);
 function nomoreframes_donate($links, $file) {
 	// adds the link to the settings page in the plugin list page
 	if ($file == plugin_basename(dirname(__FILE__).'/timu-noframes.php'))
-	$links[] = "<a href='http://www.thisismyurl.com/donate/'>" . __('Donate', 'No More Frames') . "</a>";
+	$links[] = "<a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2754373'>" . __('Donate', 'No More Frames') . "</a>";
 	return $links;
 }
 
