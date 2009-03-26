@@ -15,7 +15,7 @@ Many web sites try to load your content into their own frame, to help sell ads o
 
 == Installation ==
 
-To install the plugin, please upload the ourprogess folder to your plugins folder and active the plugin.
+To install the plugin, please upload the folder to your plugins folder and active the plugin.
 
 == Updates ==
 Updates to the plugin will be posted here, to [thisismyurl](http://www.thisismyurl.com/plugins/no-more-frames)
@@ -25,7 +25,9 @@ If you would like to donate to help support future development of this tool, ple
 
 == Frequently Asked Questions ==
 
-[Left Blank]
+= Is this plugin stable? = 
+
+Technically yes. Until I upgrade the version to 1.x, I still consider it to be in development but yes it has been tested and works well.
 
 == Change Log ==
 
