@@ -22,3 +22,17 @@ Updates to the plugin will be posted here, to [thisismyurl](http://www.thisismyu
 
 == Donations ==
 If you would like to donate to help support future development of this tool, please visit [thisismyurl](http://www.thisismyurl.com/)
+
+== Frequently Asked Questions ==
+
+[Left Blank]
+
+== Change Log ==
+
+0.5.2 (2009-03-16)
+Added the change log
+
+0.5.3 (2009-03-26)
+- Happy Birthday to me
+- Fixed a link in the readme.txt file
+
