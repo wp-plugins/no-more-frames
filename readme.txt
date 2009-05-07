@@ -5,7 +5,7 @@ Tags: frames
 Donate link: http://www.thisismyurl.com/donate/
 Requires at least: 2.0.0
 Tested up to: 2.7.1
-Stable tag: 0.5.4
+Stable tag: 1.0.0
 
 Many web sites try to load your content into their own frame, to help sell ads on their sites. This simple plugin ensure your site is protect from this using a simple piece of code in your document header.
 
@@ -25,9 +25,6 @@ If you would like to donate to help support future development of this tool, ple
 
 == Frequently Asked Questions ==
 
-= Is this plugin stable? = 
-
-Technically yes. Until I upgrade the version to 1.x, I still consider it to be in development but yes it has been tested and works well.
 
 == Change Log ==
 
@@ -38,3 +35,6 @@ Added the change log
 - Happy Birthday to me
 - Fixed a link in the readme.txt file
 
+1.0.0 (2009-05-07)
+- documentation updates
+- official release
