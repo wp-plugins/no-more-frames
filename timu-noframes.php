@@ -34,14 +34,91 @@ This software is copyright Mesoconcepts (http://www.mesoconcepts.com), and is di
 http://www.opensource.org/licenses/gpl-2.0.php
 **/
 
-add_filter('plugin_action_links', 'nomoreframes_donate', -10, 2);
 
-function nomoreframes_donate($links, $file) {
-	// adds the link to the settings page in the plugin list page
-	if ($file == plugin_basename(dirname(__FILE__).'/timu-noframes.php'))
-	$links[] = "<a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2754373'>" . __('Donate', 'No More Frames') . "</a>";
-	return $links;
+
+add_action('admin_menu', 'NoMoreFrames_menu');
+
+function NoMoreFrames_menu() {
+  add_options_page('No More Frames', 'No More Frames', 10,'NoMoreFrames.php', 'NoMoreFrames_options');
 }
+
+function NoMoreFrames_options() {
+
+?>
+<div class="wrap">
+    <div id="icon-options-general" class="icon32"><br /></div>
+    <h2>No More Frames</h2>
+    
+    
+    
+    <div id="poststuff" class="metabox-holder">
+    <div class="inner-sidebar">
+    <div id="side-sortables" class="meta-box-sortabless ui-sortable" style="position:relative;">
+    
+    <div id="sm_pnres" class="postbox">
+    <h3 class="hndle"><span>About this Plugin</span></h3>
+    <div class="inside">
+    <ul class='options'>
+    <style>.options a {text-decoration:none;}</style>
+    <li><a href="http://www.thisismyurl.com/wordpress/plugins/no-more-frames/">Plugin Homepage</a></li>
+    <li><a href="http://wordpress.org/extend/plugins/no-more-frames/">Vote for this Plugin</a></li>
+    <li><a href="http://forums.thisismyurl.com/">Support Forum</a></li>
+    <li><a href="http://support.thisismyurl.com/">Report a Bug</a></li>
+    <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5732121">Donate with PayPal</a></li>
+    </ul>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    
+    <div class="has-sidebar sm-padded" >
+    
+    <div id="post-body-content" class="has-sidebar-content">
+    
+    <div class="meta-box-sortabless">
+    
+    <!-- Rebuild Area -->
+    <!-- Basic Options -->
+    <div id="sm_basic_options" class="postbox">
+    <h3 class="hndle"><span>Basic Options</span></h3>
+    <div class="inside">
+    <p class="hndle">This plugin has no Administation level settings, once activated it is operational.</p>
+    </div>
+    </div>
+
+
+
+
+
+    
+    <div id="sm_basic_options2" class="postbox">
+      <h3 class="hndle"><span>Read Me File Contents</span></h3>
+    <div class="inside">
+      <?php 
+	  $contents = file_get_contents('../wp-content/plugins/no-more-frames/readme.txt');
+	  $contents = str_replace("\n","<br>",$contents);
+	  echo $contents;
+	  ?>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+<?php
+}
+
+
+
+
+
+
+
+
+
+
 
 class timunoframes
 {
