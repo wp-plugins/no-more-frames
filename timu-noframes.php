@@ -4,7 +4,7 @@ Plugin Name: No More Frames
 Plugin URI: http://www.thisismyurl.com/wordpress/plugins/no-more-frames/
 Description: Many web sites try to load your content into their own frame, to help sell ads on their sites. This simple plugin ensure your site is protect from this using a simple piece of code in your document header.
 Author: Christopher Ross
-Version: 1.0.3
+Version: 1.1.0
 Author URI: http://www.thisismyurl.com
 */
 
@@ -44,33 +44,42 @@ function NoMoreFrames_menu() {
 
 function NoMoreFrames_options() {
 
-?>
-<div class="wrap">
-    <div id="icon-options-general" class="icon32"><br /></div>
-    <h2>No More Frames</h2>
-    
-    
-    
-    <div id="poststuff" class="metabox-holder">
-    <div class="inner-sidebar">
-    <div id="side-sortables" class="meta-box-sortabless ui-sortable" style="position:relative;">
-    
-    <div id="sm_pnres" class="postbox">
-    <h3 class="hndle"><span>About this Plugin</span></h3>
-    <div class="inside">
-    <ul class='options'>
-    <style>.options a {text-decoration:none;}</style>
-    <li><a href="http://www.thisismyurl.com/wordpress/plugins/no-more-frames/">Plugin Homepage</a></li>
-    <li><a href="http://wordpress.org/extend/plugins/no-more-frames/">Vote for this Plugin</a></li>
-    <li><a href="http://forums.thisismyurl.com/">Support Forum</a></li>
-    <li><a href="http://support.thisismyurl.com/">Report a Bug</a></li>
-    <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5732121">Donate with PayPal</a></li>
-    </ul>
-    </div>
-    </div>
 
 
-    <?php 
+	/* Page Start */
+	echo "
+	<div class='wrap'>
+	  <div id='icon-options-general' class='icon32'><br />
+	  </div>
+	  <h2>No More Frames</h2>
+	  <form name='addlink' id='addlink' method='post' action='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5732121'>
+		<div id='poststuff' class='metabox-holder has-right-sidebar'>
+		  <div id='side-info-column' class='inner-sidebar'>
+			<div id='side-sortables' class='meta-box-sortables'>
+			  <div id='linksubmitdiv' class='postbox ' >
+				<div class='handlediv' title='Click to toggle'><br />
+				</div>
+				<h3 class='hndle'><span>Plugin Details</span></h3>
+				<div class='inside'>
+				  <div class='submitbox' id='submitlink'>
+					<div id='minor-publishing'>
+					  <div style='display:none;'>
+						<input type='submit' name='save' value='Save' />
+					  </div>
+					  <div id='minor-publishing-actions'>
+						<div id='preview-action'> </div>
+						<div class='clear'></div>
+					  </div>
+					  <div id='misc-publishing-actions'>
+						<div class='misc-pub-section misc-pub-section-last'>
+							  <ul class='options' style='padding-left: 20px;'>
+								<style>.options a {text-decoration:none;}</style>
+									<li><a href='http://www.thisismyurl.com/wordpress/plugins/no-more-frames/'>Plugin Homepage</a></li>
+									<li><a href='http://wordpress.org/extend/plugins/no-more-frames/'>Vote for this Plugin</a></li>
+									<li><a href='http://forums.thisismyurl.com/'>Support Forum</a></li>
+									<li><a href='http://support.thisismyurl.com/'>Report a Bug</a></li>";
+									
+								
 	if (function_exists(zip_open)) {
 	$file = "no-more-frames";
 		$lastupdate = get_option($file."-update");
@@ -103,48 +112,56 @@ function NoMoreFrames_options() {
 		} 
 		update_option($file."-update", date('U'));
     }}
-	?>
+
+						
+						
+								
+				echo "			</ul>
+						</div>
+					  </div>
+					</div>
+					<div id='major-publishing-actions'>
+					  <div id='delete-action'> </div>
+					  <div id='publishing-action'>
+						<input name='save' type='submit' class='button-primary' id='publish' tabindex='4' accesskey='p' value='Donate' />
+					  </div>
+					  <div class='clear'></div>
+					</div>
+					<div class='clear'></div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div id='post-body'>
+			<div id='post-body-content'>
+			  <div id='namediv' class='stuffbox'>
+				<h3>
+				  <label for='link_name'>Settings</label>
+				</h3>
+				<div class='inside'><span class='hndle'>This plugin has no Administation level settings, once activated it is operational.</span></div>
+			  </div>
+			  <div id='addressdiv' class='stuffbox'>
+				<h3>
+				  <label for='link_url'>Readme File</label>
+				</h3>
+				<div class='inside'>
+					  <pre>";
+					  echo wordwrap(file_get_contents('../wp-content/plugins/no-more-frames/readme.txt'), 80, "\n",true);;
+					  echo "</pre>
+				</div>
+			  </div>
+			  <div id='normal-sortables' class='meta-box-sortables'></div>
+			  <div id='advanced-sortables' class='meta-box-sortables'> </div>
+			</div>
+		  </div>
+		</div>
+	  </form>
+	</div>
+	";
 
 
-    </div>
-    </div>
-    
-    <div class="has-sidebar sm-padded" >
-    
-    <div id="post-body-content" class="has-sidebar-content">
-    
-    <div class="meta-box-sortabless">
-    
-    <!-- Rebuild Area -->
-    <!-- Basic Options -->
-    <div id="sm_basic_options" class="postbox">
-    <h3 class="hndle"><span>Basic Options</span></h3>
-    <div class="inside">
-    <p class="hndle">This plugin has no Administation level settings, once activated it is operational.</p>
-    </div>
-    </div>
 
-
-
-
-
-    
-    <div id="sm_basic_options2" class="postbox">
-      <h3 class="hndle"><span>Read Me File Contents</span></h3>
-    <div class="inside">
-      <?php 
-	  $contents = file_get_contents('../wp-content/plugins/no-more-frames/readme.txt');
-	  $contents = str_replace("\n","<br>",$contents);
-	  echo $contents;
-	  ?>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-</div>
-<?php
 }
 
 

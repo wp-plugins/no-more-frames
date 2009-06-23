@@ -1,11 +1,11 @@
 === Plugin Name ===
 Contributors: christopherross
-Plugin URI: http://thisismyurl.com/wordpress/plugins/no-more-frames
+Plugin URI: http://thisismyurl.com/wordpress/software/no-more-frames
 Tags: frames,seo,no frames, busting, spam,plugin,page,protection,admin,links
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5732121
 Requires at least: 2.0.0
 Tested up to: 2.8.0
-Stable tag: 1.0.3
+Stable tag: 1.1.0
 
 Many web sites try to load your content into their own frame, to help sell ads on their sites. This simple plugin ensure your site is protect from this using a simple piece of code in your document header. The plugin also dramatically reduces comment SPAM by making it significantly more frustrating for the page to be loaded into a secondary browser window.
 
@@ -43,3 +43,6 @@ Added the change log
 1.0.1
 - added admin menus
 - cleaned up files
+
+1.1.0
+- admin menu fixes for WordPress 2.8.0
