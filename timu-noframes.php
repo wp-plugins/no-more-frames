@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: No More Frames
-Plugin URI: http://www.thisismyurl.com/software/no-more-frames/
+Plugin URI: http://www.thisismyurl.com/download/wordpress-downloads/no-more-frames/
 Description: Many web sites try to load your content into their own frame, to help sell ads on their sites. This simple plugin ensure your site is protect from this using a simple piece of code in your document header.
 Author: Christopher Ross
-Version: 1.1.1
+Version: 1.1.3
 Author URI: http://www.thisismyurl.com
 */
 
@@ -74,7 +74,7 @@ function NoMoreFrames_options() {
 						<div class='misc-pub-section misc-pub-section-last'>
 							  <ul class='options' style='padding-left: 20px;'>
 								<style>.options a {text-decoration:none;}</style>
-									<li><a href='http://www.thisismyurl.com/software/no-more-frames/'>Plugin Homepage</a></li>
+									<li><a href='http://www.thisismyurl.com/download/wordpress-downloads/no-more-frames/'>Plugin Homepage</a></li>
 									<li><a href='http://wordpress.org/extend/plugins/no-more-frames/'>Vote for this Plugin</a></li>
 									<li><a href='http://forums.thisismyurl.com/'>Support Forum</a></li>
 									<li><a href='http://support.thisismyurl.com/'>Report a Bug</a></li>";
