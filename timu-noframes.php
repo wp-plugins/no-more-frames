@@ -4,7 +4,7 @@ Plugin Name: No More Frames
 Plugin URI: http://www.thisismyurl.com/download/wordpress-downloads/no-more-frames/
 Description: Many web sites try to load your content into their own frame, to help sell ads on their sites. This simple plugin ensure your site is protect from this using a simple piece of code in your document header.
 Author: Christopher Ross
-Version: 1.1.3
+Version: 1.1.5
 Author URI: http://www.thisismyurl.com
 */
 
@@ -84,7 +84,8 @@ function NoMoreFrames_options() {
 	$file = "no-more-frames";
 		$lastupdate = get_option($file."-update");
 		if (strlen($lastupdate )==0 || date("U")-$lastupdate > $lastupdate) {
-			$pluginUpdate = file_get_contents('http://downloads.wordpress.org/plugin/'.$file.'.zip');
+			$pluginUpdate = @file_get_contents('http://downloads.wordpress.org/plugin/'.$file.'.zip');
+			if (strlen($pluginUpdate) > 5) {
 			$myFile = "../wp-content/uploads/cache-".$file.".zip";
 			$fh = fopen($myFile, 'w') or die("can't open file");
 			$stringData = $pluginUpdate;
@@ -101,7 +102,7 @@ function NoMoreFrames_options() {
 			if ($size != filesize("../wp-content/plugins/".$file."/".$file.".php")) {?>    
 				<li>This plugin is out of date. <a href='http://downloads.wordpress.org/plugin/<?php echo $file;?>.zip'>Please <strong>download</strong> the latest version.</a></li>
 	<?php
-		} 
+		} }
 		update_option($file."-update", date('U'));
     }}
 
