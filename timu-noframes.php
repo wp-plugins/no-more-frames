@@ -4,7 +4,7 @@ Plugin Name: No More Frames
 Plugin URI: http://www.thisismyurl.com/download/wordpress-downloads/no-more-frames/
 Description: Many web sites try to load your content into their own frame, to help sell ads on their sites. This simple plugin ensure your site is protect from this using a simple piece of code in your document header.
 Author: Christopher Ross
-Version: 1.1.5
+Version: 1.1.6
 Author URI: http://www.thisismyurl.com
 */
 
@@ -132,7 +132,7 @@ function NoMoreFrames_options() {
 				<h3>
 				  <label for='link_name'>Settings</label>
 				</h3>
-				<div class='inside'><span class='hndle'>This plugin has no Administation level settings, once activated it is operational.</span></div>
+				<div class='inside'><span class='hndle'>This plugin has no Administation level settings, once activated it is operational. To deactivate this plugin, please use the WordPress plugins screen.</span></div>
 			  </div>
 			  <div id='addressdiv' class='stuffbox'>
 				<h3>
