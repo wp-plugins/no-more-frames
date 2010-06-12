@@ -7,7 +7,7 @@ Requires at least: 2.0.0
 Tested up to: 2.9.1
 Stable tag: 1.1.6
 
-Many web sites try to load your content into their own frame, to help sell ads on their sites. This simple plugin ensure your site is protect from this using a simple piece of code in your document header. The plugin also dramatically reduces comment SPAM by making it significantly more frustrating for the page to be loaded into a secondary browser window.
+Many web sites try to load your content into their own frame, to help sell ads on their sites. 
 
 == Description ==
 
@@ -26,6 +26,8 @@ Updates to the plugin will be posted here, to [thisismyurl](http://www.thisismyu
 If you would like to donate to help support future development of this tool, please visit [https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5732121)
 
 == Frequently Asked Questions ==
+
+Empty
 
 == Change Log ==
 
@@ -51,4 +53,11 @@ Added the change log
 - compatibility updates
 
 1.1.6
-- tested with 2.9.1
+- tested with 3.0.0
+
+== Upgrade Notice ==
+
+1.1.6
+- tested with 3.0.0
+
+== Screenshots ==
