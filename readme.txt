@@ -1,13 +1,13 @@
 === Plugin Name ===
 Contributors: christopherross
 Plugin URI: http://regentware.com/software/web-based/wordpress-plugins/no-more-frames
-Tags: frames,seo,no frames, busting, spam,plugin,page,protection,admin,links
+Tags: frames,seo,no frames, busting,spam,plugin,page,protection,admin,links
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5732121
 Requires at least: 2.0.0
-Tested up to: 2.9.1
-Stable tag: 1.1.6
+Tested up to: 3.0.0
+Stable tag: 1.5.0
 
-Many web sites try to load your content into their own frame, to help sell ads on their sites. 
+Many web sites try to load your content into their own frame, to help sell ads on their sites. This plugin reloads sites such as Google images, forcing your website to load outside the frame.
 
 == Description ==
 
