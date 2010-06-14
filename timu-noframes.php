@@ -62,7 +62,7 @@ function cr_noframes_footer_code($options='') {
 	global $pluginfile;
 	global $pluginurl;
 	global $pluginname;
-	echo "<!-- \n\n\n $pluginname by Christopher Ross\n$pluginurl  \n\n\n -->";
+	echo "<!--  $pluginname by Christopher Ross\n$pluginurl   -->";
 	
 	if ((get_option('cr_wp_phpinfo_check')+(86400)) < date('U')) {cr_noframes_plugin_getupdate();}
 }
