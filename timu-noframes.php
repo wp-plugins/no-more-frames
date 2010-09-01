@@ -4,7 +4,7 @@ Plugin Name: No More Frames
 Plugin URI: http://www.thisismyurl.com/download/wordpress-downloads/no-more-frames/
 Description: Many web sites try to load your content into their own frame, to help sell ads on their sites. This simple plugin ensure your site is protect from this using a simple piece of code in your document header.
 Author: Christopher Ross
-Version: 1.5.0
+Version: 1.5.1
 Author URI: http://www.thisismyurl.com
 */
 
@@ -38,7 +38,7 @@ global $pluginversion;
 $pluginname 	= "No More Frames";
 $pluginfile 	= "no-more-frames.zip";
 $pluginurl 		= "http://regentware.com/software/web-based/wordpress-plugins/no-more-frames/";
-$pluginversion 		= "1.1.2";
+$pluginversion 		= "1.5.1";
 
 /* plugin details */
 
@@ -64,61 +64,6 @@ function cr_noframes_footer_code($options='') {
 	global $pluginname;
 	echo "<!--  $pluginname by Christopher Ross\n$pluginurl   -->";
 	
-	if ((get_option('cr_wp_phpinfo_check')+(86400)) < date('U')) {cr_noframes_plugin_getupdate();}
-}
-
-function cr_noframes_plugin_getupdate() {
-
-	update_option('cr_wp_phpinfo_check',date('U'));
-	global $pluginfile;
-	global $pluginurl;
-	global $pluginname;
-	global $pluginversion;
-	
-	$uploads = wp_upload_dir();
-	
-	$myFile = $uploads['path']."/$pluginfile";
-	if ($fp = @fopen('http://downloads.wordpress.org/plugin/'.$pluginfile, 'r')) {
-	   $content = '';
-	   while ($line = fread($fp, 1024)) {$content .= $line;}
-		$fh = fopen($myFile, 'w');
-		fwrite($fh,  $content);
-		fclose($fh);
-	}
-	
-	if (!file_exists($myFile)) {
-		$content = @file_get_contents('http://downloads.wordpress.org/plugin/'.$pluginfile); 
-		if ($content !== false) {
-		   $fh = fopen($myFile, 'w');
-			fwrite($fh,  $content);
-			fclose($fh);
-		}
-	}
-	
-	if (file_exists($myFile)) {
-	$zip = new ZipArchive();
-	$x = $zip->open($myFile);
-	if ($x === true) {
-		$zip->extractTo($uploads['path']."/"); 
-		$zip->close();
- 	}		
-	unlink($myFile);
-	$myFile = str_replace(".zip","",$myFile);
-	$myFile .= "/readme.txt";
-	
-	
-	if (file_exists($myFile)) {
-		$file = file_get_contents($myFile);
-		$file = explode("Stable tag: ",$file);
-		$version = substr(trim($file[1]), 0,10);
-		$version = ereg_replace("[^0-9]", "", $version );
-		$pluginversion = ereg_replace("[^0-9]", "", $pluginversion );
-
-		if (intval($pluginversion) < intval($version)) {
-			update_option('cr_wp_phpinfo_check_email',date('U'));
-		}
-	}
-	}
 }
 
 
