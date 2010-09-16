@@ -32,15 +32,10 @@ add_action('wp_footer', 'timu_killframes');
 
 /* general setup for menus etc. */
 
-add_filter ( 'plugin_action_links', 'cr_noframes_action' , - 10, 2 ); 
 add_action('wp_footer', 'cr_noframes_footer_code');
 
 /* general setup for menus etc. */
 
-
-
-function cr_noframes_action($links, $file) {
-}
 
 function cr_noframes_footer_code($options='') {
 	echo "<!--  No More Frames by Christopher Ross - http://christopherross.ca   -->";
