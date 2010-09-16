@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: No More Frames
-Plugin URI: http://www.thisismyurl.com/download/wordpress-downloads/no-more-frames/
+Plugin URI: http://christopherross.ca/download/wordpress-downloads/no-more-frames/
 Description: Many web sites try to load your content into their own frame, to help sell ads on their sites. This simple plugin ensure your site is protect from this using a simple piece of code in your document header.
 Author: Christopher Ross
 Version: 1.5.2
@@ -9,7 +9,7 @@ Author URI: http://christopherross.ca
 */
 
 
-/*  Copyright 2008  Christopher Ross  (email : info@thisismyurl.com)
+/*  Copyright 2008  Christopher Ross  (email : info@christopherross.ca)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
