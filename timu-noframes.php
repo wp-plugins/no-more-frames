@@ -4,8 +4,8 @@ Plugin Name: No More Frames
 Plugin URI: http://www.thisismyurl.com/download/wordpress-downloads/no-more-frames/
 Description: Many web sites try to load your content into their own frame, to help sell ads on their sites. This simple plugin ensure your site is protect from this using a simple piece of code in your document header.
 Author: Christopher Ross
-Version: 1.5.1
-Author URI: http://www.thisismyurl.com
+Version: 1.5.2
+Author URI: http://christopherross.ca
 */
 
 
@@ -29,18 +29,6 @@ Author URI: http://www.thisismyurl.com
 add_action('wp_footer', 'timu_killframes');
 
 
-/* plugin details */
-global $pluginfile;
-global $pluginurl;
-global $pluginname;
-global $pluginversion;
-
-$pluginname 	= "No More Frames";
-$pluginfile 	= "no-more-frames.zip";
-$pluginurl 		= "http://regentware.com/software/web-based/wordpress-plugins/no-more-frames/";
-$pluginversion 		= "1.5.1";
-
-/* plugin details */
 
 /* general setup for menus etc. */
 
@@ -52,17 +40,10 @@ add_action('wp_footer', 'cr_noframes_footer_code');
 
 
 function cr_noframes_action($links, $file) {
-	global $pluginurl;
-	$this_plugin = plugin_basename ( __FILE__ );
-	if ($file == $this_plugin) {$links [] = "<a href='".$pluginurl ."?".get_bloginfo('url')."'>Manual</a>";}
-	return $links;
 }
 
 function cr_noframes_footer_code($options='') {
-	global $pluginfile;
-	global $pluginurl;
-	global $pluginname;
-	echo "<!--  $pluginname by Christopher Ross\n$pluginurl   -->";
+	echo "<!--  No More Frames by Christopher Ross - http://christopherross.ca   -->";
 	
 }
 
