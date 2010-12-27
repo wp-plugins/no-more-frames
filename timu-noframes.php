@@ -1,30 +1,42 @@
 <?php
 /*
 Plugin Name: No More Frames
-Plugin URI: http://christopherross.ca/download/wordpress-downloads/no-more-frames/
+Plugin URI: http://thisismyurl.com/downloads/wordpress/plugins/no-more-frames/
 Description: Many web sites try to load your content into their own frame, to help sell ads on their sites. This simple plugin ensure your site is protect from this using a simple piece of code in your document header.
 Author: Christopher Ross
-Version: 1.5.2
-Author URI: http://christopherross.ca
+Version: 1.5.3
+Author URI: http://thisismyurl.com
 */
 
 
-/*  Copyright 2008  Christopher Ross  (email : info@christopherross.ca)
-
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+/*
+/--------------------------------------------------------------------\
+|                                                                    |
+| License: GPL                                                       |
+|                                                                    |
+| Copyright (C) 2011, Christopher Ross		   				  	     |
+| http://thisismyurl.com		                                     |
+| All rights reserved.                                               |
+|                                                                    |
+| This program is free software; you can redistribute it and/or      |
+| modify it under the terms of the GNU General Public License        |
+| as published by the Free Software Foundation; either version 2     |
+| of the License, or (at your option) any later version.             |
+|                                                                    |
+| This program is distributed in the hope that it will be useful,    |
+| but WITHOUT ANY WARRANTY; without even the implied warranty of     |
+| MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the      |
+| GNU General Public License for more details.                       |
+|                                                                    |
+| You should have received a copy of the GNU General Public License  |
+| along with this program; if not, write to the                      |
+| Free Software Foundation, Inc.                                     |
+| 51 Franklin Street, Fifth Floor                                    |
+| Boston, MA  02110-1301, USA                                        |   
+|                                                                    |
+\--------------------------------------------------------------------/
 */
+
 
 add_action('wp_footer', 'timu_killframes');
 
@@ -38,7 +50,7 @@ add_action('wp_footer', 'cr_noframes_footer_code');
 
 
 function cr_noframes_footer_code($options='') {
-	echo "<!--  No More Frames by Christopher Ross - http://christopherross.ca   -->";
+	echo "<!--  No More Frames by Christopher Ross  - http://thisismyurl.com   -->";
 	
 }
 

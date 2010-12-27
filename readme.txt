@@ -1,11 +1,11 @@
 === Plugin Name ===
 Contributors: christopherross
-Plugin URI: http://regentware.com/12/no-more-frames/
+Plugin URI: http://thisismyurl.com/downloads/wordpress/plugins/no-more-frames/
 Tags: frames,seo,no frames, busting,spam,plugin,page,protection,admin,links
-Donate link:  http://regentware.com/donate/
+Donate link:  http://thisismyurl.com/downloads/wordpress/plugins/no-more-frames/
 Requires at least: 2.0.0
-Tested up to: 3.0.1
-Stable tag: 1.5.2
+Tested up to: 3.0.3
+Stable tag: 1.5.3
 
 Many web sites try to load your content into their own frame, to help sell ads on their sites. This plugin reloads sites such as Google images, forcing your website to load outside the frame.
 
@@ -20,10 +20,10 @@ The plugin also dramatically reduces comment SPAM by making it significantly mor
 To install the plugin, please upload the folder to your plugins folder and active the plugin.
 
 == Updates ==
-Updates to the plugin will be posted here, to [Regent Software](http://christopherross.ca/)
+Updates to the plugin will be posted here, to [Christopher Ross](http://thisismyurl.com/downloads/wordpress/plugins/no-more-frames/)
 
 == Donations ==
-If you would like to donate to help support future development of this tool, please visit [http://regentware.com/donate/?5732121)
+If you would like to donate to help support future development of this tool, please visit [Christopher Ross] (http://thisismyurl.com/downloads/wordpress/plugins/no-more-frames/)
 
 == Frequently Asked Questions ==
 
