@@ -2,9 +2,9 @@
 /*
 Plugin Name: No More Frames
 Plugin URI: http://thisismyurl.com/downloads/wordpress/plugins/no-more-frames/
-Description: Many web sites try to load your content into their own frame, to help sell ads on their sites. This simple plugin ensure your site is protect from this using a simple piece of code in your document header.
+Description: Forces frames to reload to the website homepage. This plugin has no settings, learn more at <a href='http://thisismyurl.com/downloads/wordpress/plugins/no-more-frames/'>thisismyurl.com</a>.
 Author: Christopher Ross
-Version: 1.5.3
+Version: 2.0.0
 Author URI: http://thisismyurl.com
 */
 
@@ -37,28 +37,9 @@ Author URI: http://thisismyurl.com
 \--------------------------------------------------------------------/
 */
 
-
-add_action('wp_footer', 'timu_killframes');
-
-
-
-/* general setup for menus etc. */
-
-add_action('wp_footer', 'cr_noframes_footer_code');
-
-/* general setup for menus etc. */
-
-
-function cr_noframes_footer_code($options='') {
-	echo "<!--  No More Frames by Christopher Ross  - http://thisismyurl.com   -->";
-	
-}
-
-
-function timu_killframes() {
-
-	$home_url = strtolower(get_option('home'));
-	echo "
+function thisismyurl_noframes_killframes() {
+	$home_url = strtolower(get_bloginfo('url'));
+	?>
 		<script type='text/javascript'>
 		<!--
 		try
@@ -70,7 +51,7 @@ function timu_killframes() {
 			top_location = top_location.toLowerCase();
 			cur_location = cur_location.toLowerCase();
 		
-			if ( ( top_location != cur_location ) && parent_location.indexOf('{$home_url}') != 0 )
+			if ( ( top_location != cur_location ) && parent_location.indexOf('{<?php echo $home_url; ?>}') != 0 )
 			{
 				top.location.href = document.location.href;
 			}
@@ -79,6 +60,8 @@ function timu_killframes() {
 		{top.location.href = document.location.href;}
 		//-->
 		</script>
-		";
+	<?php
 }
+add_action('wp_footer', 'thisismyurl_noframes_killframes');
+
 ?>
