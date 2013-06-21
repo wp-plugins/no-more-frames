@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: christopherross
-Plugin URI: http://thisismyurl.com/downloads/wordpress/plugins/no-more-frames/
+Plugin URI: http://thisismyurl.com/plugins/no-more-frames/
 Tags: frames,seo,no frames, busting,spam,plugin,page,protection,admin,links
-Donate link:  http://thisismyurl.com/downloads/wordpress/plugins/no-more-frames/
+Donate link:  http://thisismyurl.com/plugins/no-more-frames/
 Requires at least: 2.0.0
-Tested up to: 3.2.0
+Tested up to: 3.5.1
 Stable tag: 2.0.0
 
 Many web sites try to load your content into their own frame, to help sell ads on their sites. This plugin reloads sites such as Google images, forcing your website to load outside the frame.
@@ -15,21 +15,31 @@ Many web sites try to load your content into their own frame, to help sell ads o
 
 The plugin also dramatically reduces comment SPAM by making it significantly more frustrating for the page to be loaded into a secondary browser window.
 
+This plugin is maintained by Christopher Ross, http://thisismyurl.com or you can find him on Twitter at http://twitter.com/thisismyurl/
+
 == Installation ==
 
 To install the plugin, please upload the folder to your plugins folder and active the plugin. The plugin has no settings.
 
 == Updates ==
-Updates to the plugin will be posted here, to [thisismyurl.com](http://thisismyurl.com/downloads/wordpress/plugins/no-more-frames/)
+Updates to the plugin will be posted here, to [thisismyurl.com](http://thisismyurl.com/plugins/no-more-frames/)
 
 == Donations ==
-If you would like to donate to help support future development of this tool, please visit [Christopher Ross] (http://thisismyurl.com/downloads/wordpress/plugins/no-more-frames/)
+
+If you would like to donate to help support future development of this tool, please visit [Christopher Ross] (http://thisismyurl.com/plugins/no-more-frames/)
 
 == Frequently Asked Questions ==
 
 Empty
 
 == Change Log ==
+
+= 2.0.1 =
+
+* code cleanup
+* renamed core file to standardized naming
+* use get_site_url() instead of get_bloginfo( 'url' )
+* will require reactivation after update
 
 = 2.0.0 =
 
