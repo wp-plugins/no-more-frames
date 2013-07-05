@@ -5,7 +5,7 @@ Plugin URI: http://thisismyurl.com/plugins/no-more-frames/
 Description: Forces frames to reload to the website homepage. This plugin has no settings, learn more at <a href='http://thisismyurl.com/plugins/no-more-frames/'>thisismyurl.com</a>.
 Author: Christopher Ross
 Version: 2.0.1
-Author URI: http://thisismyurl.com
+Author URI: http://thisismyurl.com/
 */
 
 /**
