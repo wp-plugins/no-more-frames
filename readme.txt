@@ -1,11 +1,11 @@
-=== Plugin Name ===
-Contributors: christopherross
-Plugin URI: http://thisismyurl.com/plugins/no-more-frames/
+=== No More Frames ===
+Contributors: christopherross,thisismyurl
+Plugin URI: http://thisismyurl.com/downloads/no-more-frames/
 Tags: frames,seo,no frames, busting,spam,plugin,page,protection,admin,links
-Donate link:  http://thisismyurl.com/plugins/no-more-frames/
-Requires at least: 2.0.0
-Tested up to: 3.5.1
-Stable tag: 2.0.0
+Donate link: http://thisismyurl.com/downloads/
+Requires at least: 3.0.0
+Tested up to: 4.1.0
+Stable tag: 15.01
 
 Many web sites try to load your content into their own frame, to help sell ads on their sites. This plugin reloads sites such as Google images, forcing your website to load outside the frame.
 
@@ -22,17 +22,27 @@ This plugin is maintained by Christopher Ross, http://thisismyurl.com or you can
 To install the plugin, please upload the folder to your plugins folder and active the plugin. The plugin has no settings.
 
 == Updates ==
-Updates to the plugin will be posted here, to [thisismyurl.com](http://thisismyurl.com/plugins/no-more-frames/)
+Updates to the plugin will be posted here, to http://thisismyurl.com/downloads/
 
 == Donations ==
 
-If you would like to donate to help support future development of this tool, please visit [Christopher Ross] (http://thisismyurl.com/plugins/no-more-frames/)
+If you would like to donate to help support future development of this tool, please visit http://thisismyurl.com/downloads/
 
 == Frequently Asked Questions ==
 
 Empty
 
 == Change Log ==
+
+
+= 15.01 =
+
+* moved CSS to child directories
+* added information page for plugin
+* tested for WordPress 4.1
+* removed icon file
+* Added OOP Class structure
+* Migrated common structure for plugins
 
 = 2.0.1 =
 
