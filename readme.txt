@@ -34,15 +34,9 @@ Empty
 
 == Change Log ==
 
-
 = 15.01 =
 
-* moved CSS to child directories
-* added information page for plugin
-* tested for WordPress 4.1
-* removed icon file
-* Added OOP Class structure
-* Migrated common structure for plugins
+* General code cleanup, preparing for migration to OOP
 
 = 2.0.1 =
 
